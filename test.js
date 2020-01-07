@@ -1,5 +1,5 @@
-import { Corpus, Similarity, Stopwords } from './index.js';
-import tape from 'tape';
+const { Corpus, Similarity, Stopwords } = require('./');
+const tape = require('tape');
 
 const corpus = new Corpus(
   ['document1', 'document2', 'document3'],

@@ -1,4 +1,6 @@
-export { default as Corpus } from './src/Corpus.js';
-export { default as Document } from './src/Document.js';
-export { default as Similarity } from './src/Similarity.js';
-export { default as Stopwords } from './src/Stopwords.js';
+module.exports = {
+  Corpus: require('./src/Corpus'),
+  Document: require('./src/Document'),
+  Similarity: require('./src/Similarity'),
+  Stopwords: require('./src/Stopwords')
+}

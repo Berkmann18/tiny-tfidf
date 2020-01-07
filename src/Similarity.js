@@ -1,6 +1,6 @@
 // For calculating the pairwise similarity between documents in the corpus, in particular to create
 // a distance matrix (distance = 1 - similarity).
-export default class Similarity {
+class Similarity {
 
   // Expects an instance of Corpus
   constructor(corpus) {
@@ -60,3 +60,5 @@ export default class Similarity {
     return this._distanceMatrix;
   }
 }
+
+module.exports = Similarity;

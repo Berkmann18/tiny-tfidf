@@ -2,7 +2,7 @@
 // list or term weights (which are managed at the corpus level) and only maintains the
 // document-level term frequencies. Terms can contain only letters or numbers; they are filtered
 // out if they contain only 1 character or if they start with a number.
-export default class Document {
+class Document {
 
   // Expects a single one of the texts originally passed into Corpus
   constructor(text) {
@@ -64,3 +64,5 @@ export default class Document {
     return Array.from(this._termFrequencies.keys());
   }
 }
+
+module.exports = Document;

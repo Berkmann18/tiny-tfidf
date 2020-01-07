@@ -14,7 +14,7 @@ const defaultStopwords = ['me', 'my', 'myself', 'we', 'our', 'ours', 'ourselves'
   're', 've', 'aren', 'couldn', 'didn', 'doesn', 'hadn', 'hasn', 'haven', 'isn', 'mustn', 'needn',
   'shouldn', 'wasn', 'weren', 'won', 'wouldn'];
 
-export default class Stopwords {
+class Stopwords {
 
   // "useDefaultStopwords" and "customStopwords" are optional parameters, as specified in the
   // constructor for Corpus, which control whether the default stopword list should be used, and to
@@ -35,3 +35,5 @@ export default class Stopwords {
     return Array.from(this._stopwords.keys());
   }
 }
+
+module.exports = Stopwords;
