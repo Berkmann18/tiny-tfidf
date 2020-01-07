@@ -1,5 +1,7 @@
-# tiny-tfidf
-![npm](https://img.shields.io/npm/v/tiny-tfidf.svg)
+# tiny-tfidf for NodeJS
+![npm](https://img.shields.io/npm/v/tiny-tfidf-node.svg)
+
+**This a NodeJS adaption of [`tiny-tfidf`](https://www.npmjs.com/package/tiny-tfidf).
 
 Minimal implementations of a couple of classic text analysis tools (TF-IDF and cosine similarity). Everything is done in memory so this library is not suitable for large-scale use. Instead, the goal is to create something simple that can be used to explain or experiment with the techniques, using a small set of documents. For a detailed and interactive explanation, see this [Observable notebook](https://observablehq.com/@kerryrodden/introduction-to-text-analysis-with-tf-idf).
 
@@ -16,19 +18,19 @@ I am open to adding either if there's a tiny way to do it!
 Note: I'm still actively developing this code (and documentation), and the API is likely to change/evolve up until version 1.0.
 
 ```js
-import { Corpus } from "tiny-tfidf";
+const { Corpus } = require('tiny-tfidf');
 
 const corpus = new Corpus(
-  ["document1", "document2", "document3"],
+  ['document1', 'document2', 'document3'],
   [
-    "This is test document number 1. It is quite a short document.",
-    "This is test document 2. It is also quite short, and is a test.",
-    "Test document number three is a bit different and is also a tiny bit longer."
+    'This is test document number 1. It is quite a short document.',
+    'This is test document 2. It is also quite short, and is a test.',
+    'Test document number three is a bit different and is also a tiny bit longer.'
   ]
 );
 
 // print top terms for document 3
-console.log(corpus.getTopTermsForDocument("document3"));
+console.log(corpus.getTopTermsForDocument('document3'));
 
 // result
 [
@@ -46,15 +48,6 @@ console.log(corpus.getTopTermsForDocument("document3"));
 
 For many more usage examples, see this [Observable notebook](https://observablehq.com/@kerryrodden/introduction-to-text-analysis-with-tf-idf).
 
-### With Node.js
-
-Disclaimer: this is an ES6 module and is mostly intended for use in the browser, rather than with Node.js ([more background on ES6 modules and Node](https://github.com/nodejs/modules/blob/master/doc/announcement.md#es-module-code-in-packages)).
-
-Example with Node v12.6.0 :
-
-```sh
-node --experimental-modules --es-module-specifier-resolution=node test.js
-```
 ## API (v0.9)
 
 ### `Corpus` class
