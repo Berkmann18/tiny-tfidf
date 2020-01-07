@@ -1,7 +1,7 @@
 {
-  "name": "tiny-tfidf",
-  "version": "0.9.1",
-  "description": "Minimal implementations of a couple of classic text analysis tools (TF-IDF and cosine similarity) ",
+  "name": "@berkmann18/tiny-tfidf",
+  "version": "0.0.1",
+  "description": "Node compatible version of tiny-tfidf",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -15,9 +15,10 @@
     "TFIDF",
     "TF-IDF",
     "cosine similarity",
-    "vector model"
+    "vector model",
+    "node"
   ],
-  "author": "kerryrodden",
+  "author": "Maximilian Berkmann <maxieberkmann@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kerryrodden/tiny-tfidf/issues"
