@@ -18,7 +18,7 @@ I am open to adding either if there's a tiny way to do it!
 Note: I'm still actively developing this code (and documentation), and the API is likely to change/evolve up until version 1.0.
 
 ```js
-const { Corpus } = require('tiny-tfidf');
+const { Corpus } = require('tiny-tfidf-node');
 
 const corpus = new Corpus(
   ['document1', 'document2', 'document3'],
